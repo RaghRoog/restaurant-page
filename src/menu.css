@@ -1,0 +1,31 @@
+.menu-container{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+.food{
+    width: 25%;
+    height: 250px;
+    background-size: cover;
+    background-position: center, center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 2px white;
+    margin: 2%;
+}
+.food:hover{
+    transform: scale(1.05);
+}
+.food-name{
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+}

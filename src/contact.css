@@ -1,0 +1,78 @@
+.contact-container{
+    width: 98vw;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+.container{
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.left-side, .right-side{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contacts, .message{
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    height: 60%;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+textarea{
+    width: 400px;
+    height: 200px;
+}
+.messageInput{
+    width: 400px;
+}
+.submit-button{
+    width: 200px;
+}
+.submit-button:hover{
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    border: 2px solid white;
+}
+.submit-button:active{
+    transform: translateY(4px);
+}
+@media screen and (max-width:990px){
+    .container{
+        flex-wrap: wrap;
+    }.left-side, .right-side{
+        height: fit-content;
+        padding: 20%;
+    }
+    .contacts, .message{
+       font-size: 1.3rem;
+       height: fit-content;
+       padding: 20%;
+    }
+    textarea{
+        width: 200px;
+        height: 100px;
+    }
+}
